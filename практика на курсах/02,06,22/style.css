@@ -1,0 +1,39 @@
+li{
+    list-style-type: none;
+    cursor: pointer;
+    padding: 5px;
+    background-color: darkred;
+    color: white;
+    transition: background-color 1s, color 1s;
+}
+div{
+    text-align: center;
+    margin: auto;
+    width: 150px;
+}
+li:hover{
+    background-color: white;
+    color: black;
+}
+
+ul{
+    padding: 0;
+}
+.third-2{
+    position: absolute;
+    width: 50px;
+
+}
+.third li{
+    position: relative;
+    display: block;
+}
+.third:hover .third-2{
+    display: block;
+}
+.last:hover .third-2{
+    display: block;
+}
+.last li{
+    position: relative;
+}

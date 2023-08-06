@@ -1,0 +1,74 @@
+.one{
+    width: 150px;
+    height: 150px;
+    border: 1px solid;
+    background: radial-gradient(circle, white ,blue);
+}
+
+
+.two{
+    width: 150px;
+    height: 150px;
+    border: 1px solid;
+    background: radial-gradient(at top, white ,blue);
+}
+.thr{
+    width: 250px;
+    height: 150px;
+    border: 1px solid;
+    background: radial-gradient(circle, white ,blue);
+}
+.for{
+    width: 250px;
+    height: 150px;
+    border: 1px solid;
+    background: radial-gradient(ellipse, white ,blue);
+}
+.fiv{
+    width: 250px;
+    height: 150px;
+    border: 1px solid;
+    background: radial-gradient(circle closest-side at 30px 40px, white 10% 50%,blue);
+}
+.six{
+    width: 250px;
+    height: 150px;
+    border: 1px solid;
+    background: radial-gradient(circle, black 5% 10%,white 20% 30%,green 35% 100%);
+}
+.sev{
+    width: 250px;
+    height: 150px;
+    border: 1px solid;
+    background: radial-gradient(circle, green 10% 15%,white 15% 35%,green 35% 100%);
+}
+.eit{
+    width: 250px;
+    height: 150px;
+    border: 1px solid;
+    background: repeating-linear-gradient(to right,black 0 5px,white 5px 10px);
+}
+.nine{
+    width: 250px;
+    height: 150px;
+    border: 1px solid;
+    background: repeating-linear-gradient(black 0 5px,white 5px 10px);
+}
+.ten{
+    width: 250px;
+    height: 150px;
+    border: 1px solid;
+    background: repeating-linear-gradient(white 1px 8px,black 8px 9px);
+}
+.ele{
+    width: 250px;
+    height: 150px;
+    border: 1px solid;
+    background: repeating-linear-gradient(to right top,white 0 10px,black 10px 15px);
+}
+.tvelv{
+    width: 250px;
+    height: 150px;
+    border: 1px solid;
+    background: repeating-radial-gradient(circle, black 5px 10px,white 10px 15px);
+}

@@ -1,0 +1,23 @@
+.checkbox{
+    display: grid;
+    grid-template-columns: 50px 50px 50px;
+    gap: 10px;
+    justify-content: center;
+}
+input[type="checkbox"]{
+    display: none;
+}
+label{
+
+}
+label::before{
+    content: '';
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border: 1px solid;
+}
+input[type="checkbox"]:checked + label::before {
+    background-image: url(img/5-min.png);
+    background-size: 50px;
+}

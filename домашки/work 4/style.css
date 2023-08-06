@@ -1,0 +1,38 @@
+h1{
+    color: red;
+    text-align: center;
+    text-decoration: underline;
+}
+.orange_line{
+    height: 5px;
+    background-color: orange;
+}
+.number_1{
+    text-align: center;
+    font-style: italic;
+    font-size: 5;
+    font-family: Arial;
+    color: blue;
+}
+.number_2{
+    text-align: right;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 4;
+    font-family: "Lucida Console";
+    color: gray;
+    text-decoration: underline;
+}
+@font-face {
+    font-family: "Lucida Console";
+    src: url(lucidaconsole.ttf);
+}
+.number_3{
+    text-align: left;
+    font-size: 3;
+    font-family: 'Courier New',arial;
+    color: green;
+}
+.number_4{
+    text-align: justify;
+}

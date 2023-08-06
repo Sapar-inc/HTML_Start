@@ -1,0 +1,90 @@
+body{
+   margin: 0; 
+}
+.content{
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 600px;
+    background: url(img/bg.png) no-repeat;
+    background-size: 100% 600px;
+}
+img{
+    position: absolute;
+}
+.hulk{
+    width: 700px;
+    padding-top: 500px;
+    animation-name: hulka;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+.widow{
+    margin-left: 300px;
+    padding-top: 600px;
+    width: 390px;
+    animation-name: hulka;
+    animation-duration: 2s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+}
+.cap{
+    padding-top: 600px;
+    margin-left: 450px;
+    width: 450px;
+    z-index: 1;
+    animation-name: hulka;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+.ironman{
+    padding-top: 550px;
+    margin-left: 650px;
+    width: 450px;
+    z-index: 2;
+    animation-name: hulka;
+    animation-duration: 2s;
+    animation-delay: 1.5s;
+    animation-fill-mode: forwards;
+
+}
+.hawkeye{
+    padding-top: 600px;
+    margin-left: 880px;
+    width: 340px;
+    z-index: 1;
+    animation-name: hulka;
+    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+.thor{
+    padding-top: 550px;
+    margin-left: 1000px;
+    width: 700px;
+    animation-name: hulka;
+    animation-duration: 2s;
+    animation-delay: 2.5s;
+    animation-fill-mode: forwards;
+}
+h1{
+    text-align: center;
+    margin: 90px 0 -180px 0;
+    font-size: 100px;
+    font-family: "Avengers";
+}
+@font-face{
+    font-family: "Avengers";
+    src: url(font/AVENGEANCE\ HEROIC\ AVENGER\ AT.ttf);
+}
+@keyframes hulka{
+    0%{
+        top: 0px;
+    }
+    100%{
+        top: -400px;
+    }
+}

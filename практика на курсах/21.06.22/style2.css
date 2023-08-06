@@ -1,0 +1,39 @@
+.one{
+    width: 300px;
+    height: 200px;
+    border: 1px solid;
+    background: linear-gradient(to left,red,rgb(255, 255, 255))
+}
+
+
+.two{
+    width: 300px;
+    height: 200px;
+    border: 1px solid;
+    background: linear-gradient(to right,red,rgb(255, 255, 255))
+}
+.thr{
+    width: 300px;
+    height: 200px;
+    border: 1px solid;
+    background: linear-gradient(to top left,red,rgb(255, 255, 255))
+}
+.for{
+    width: 300px;
+    height: 200px;
+    border: 1px solid;
+    background: linear-gradient(to bottom,red,rgb(255, 255, 255))
+}
+.fiv{
+    width: 500px;
+    height: 300px;
+    border: 1px solid;
+    background: linear-gradient(to right,red 0,blue 350px,white 450px,red)
+}
+.six{
+    width: 700px;
+    height: 500px;
+    border: 1px solid;
+    background: linear-gradient(to top,red 0 150px, white 150px 300px, red 300px 500px);
+
+}

@@ -1,0 +1,7 @@
+body{
+    text-align: center;
+    background-image: url(img/106fc490-4ba1-4470-a39e-f11ec3034205.jpg),url(img/b4bd84a2-96b0-4358-b6c8-fbf40507867c.jpg);
+    background-repeat: repeat-y;
+    background-size: 33%;
+    background-position: left,right;
+}

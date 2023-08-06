@@ -1,0 +1,52 @@
+body{
+    background-color: gray;
+}
+nav ul {
+    padding:0;
+    margin:0;
+    list-style: none;
+    position: relative;
+    }
+
+nav ul li {
+    display:inline-block;
+    }
+
+nav a {
+    display:block;
+    padding:0 10px;
+}
+
+nav ul ul {
+	display: none;
+	position: absolute;
+	top: 100%;
+    
+}
+nav ul li:hover > ul {
+	display:block;
+    background-color: white;
+    box-shadow: -1px 5px 5px black;
+}
+nav ul ul li {
+	min-width:170px;
+	float:none;
+	display:list-item;
+	position: relative;
+}
+
+.file:hover{
+    background-color: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    box-shadow: -1px -1px 5px black;
+}
+.el:hover{
+    background-color: blue;
+    color: white;
+
+}
+.el{
+    text-decoration: none;
+}
+

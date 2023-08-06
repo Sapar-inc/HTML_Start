@@ -1,0 +1,30 @@
+.conteiner{
+    
+}
+ul{ 
+    display: inline-block;
+    border: 25px solid red;
+    padding: 0;
+    list-style-image: url(/img/НовыйХолст1.png);
+}
+ol{
+    display: inline-block;
+    border: 20px solid red;
+    padding: 0;
+}
+dl{
+
+}
+li{
+    border-bottom: 5px solid red;
+    width: 300px;
+}
+.odin{
+    border-bottom: 0;
+}
+.ep{
+    border: 0;
+}
+a{
+    cursor: pointer;
+}

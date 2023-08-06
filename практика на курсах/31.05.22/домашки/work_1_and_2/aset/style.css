@@ -1,0 +1,41 @@
+body{
+    background: linear-gradient(crimson, gold, yellowgreen, teal, crimson);
+    animation: background2 5s infinite alternate;
+}
+@keyframes background2 {
+    100% {
+      background-position: 0 2000px;
+    }
+  }
+  
+.ass{
+    font-family: 'open sans';
+    color: rgb(202, 255, 42);
+    text-align: center;
+}
+img{
+    width: 250px;
+    margin-left: 35%;
+    border-radius: 30px;
+}
+.link{
+    color: aliceblue;
+    position: relative;
+    left: 43%;
+    text-decoration: none;
+}
+.ff{
+    margin-top: 10px;
+    position: relative;
+    left: 48%;
+}
+.textbl{
+    position: relative;
+    left: 45%;
+    color: rgb(255, 0, 0);
+}
+.spanss{
+    color: tomato;
+}
+
+/* комментарий */

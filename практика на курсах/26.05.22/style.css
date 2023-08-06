@@ -1,0 +1,52 @@
+.dd{
+    background-color: red;
+}.ss{
+    background-color: blue;
+}
+.tri{
+
+}
+body{
+    background-image: url(img/pexels-nout-gons-248159.jpg);
+    background-size: 1550px auto;
+    background-repeat: no-repeat;
+}
+.raz{
+    display: inline-block;
+    width: 250px;
+    height: 250px;
+    border: 3px dotted rgb(255, 255, 0);
+    text-align: center;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+.top{
+    background-image: url(img/NovyKholst1.png);
+    background-repeat: no-repeat;
+    background-size: 50px;
+    background-position: top;
+}
+.right{
+    background-image: url(img/NovyKholst1.png);
+    background-repeat: no-repeat;
+    background-size: 50px;
+    background-position: right;
+}
+.bottom{
+    background-image: url(img/NovyKholst1.png);
+    background-repeat: no-repeat;
+    background-size: 50px;
+    background-position: bottom;
+}
+.left{
+    background-image: url(img/NovyKholst1.png);
+    background-repeat: no-repeat;
+    background-size: 50px;
+    background-position: left;
+}
+.centre{
+    background-image: url(img/NovyKholst1.png);
+    background-repeat: no-repeat;
+    background-size: 50px;
+    background-position: center;
+}

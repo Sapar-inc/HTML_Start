@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang ="ru">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="shorcut icon" href="aset/css/favicon/favicon.ico">
+        <link rel="stylesheet" href="aset/css/Style.css">
+        <link rel="stylesheet" href="">
+        <script src="aset/css/jquery-3.6.0.min.js"></script>
+        <title>Rise Customs</title>
+    </head>
+
+<body style="margin: 0px;">
+
+<script src="aset/css/animation.js"></script> <!-- Java script привязка-->
+
+<!--Главное меню--> <header id="header" class="header"><nav role="navigation">
+<ul style="margin: 0px;">
+  <li><a href="Site.html">Главная</a></li>
+  <li><a href="aset/css/bad.html">О блоге</a>
+    <ul>
+      <li><a href="aset/css/bad.html">Об авторе</a></li>
+    </ul>
+  </li>
+  <li><a href="https://wa.me/77053056462">Обратная связь</a></li>
+  <form class="SS">
+    <input class="search" type="text" id="input" placeholder="Ну попробуй по ищи...">
+    <button type="submit" class="button_search">Поиск</button>
+    </form>
+</ul>
+<div class="d1">
+</div> 
+</nav></header>
+
+<!--Логотип--> <div class="logo_mw">
+  <img style="width: 500px; padding-top: 30px;" src="aset/css/kartinki/logo_mw.png">
+</div>
+
+<!--Слайдер--> <div class="carousel-wrapper">
+  <span id="item-1"></span>
+  <span id="item-2"></span>
+  <span id="item-3"></span>
+  <div class="carousel-item item-1">
+   
+
+    <a class="arrow arrow-prev" href="#item-3"></a>
+    <a class="arrow arrow-next" href="#item-2"></a>
+  </div>
+  
+  <div class="carousel-item item-2">
+ 
+
+    <a class="arrow arrow-prev" href="#item-1"></a>
+    <a class="arrow arrow-next" href="#item-3"></a>
+  </div>
+  
+  <div class="carousel-item item-3">
+  
+
+    <a class="arrow arrow-prev" href="#item-2"></a>
+    <a class="arrow arrow-next" href="#item-1"></a>
+  </div>
+</div>
+
+<!--google play.music--><div id="myAudio" class="player">
+<audio preload="auto" src="aset/css/sound/NFS.mp3" >
+</audio></div>
+
+<!--Таймер--> <div class="timer">
+  <div class="timer__items">
+    <div class="timer__item timer__days">00</div>
+    <div class="timer__item timer__hours">00</div>
+    <div class="timer__item timer__minutes">00</div>
+    <div class="timer__item timer__seconds">00</div>
+  </div>
+</div>
+
+
+<!--Розыгрыш--><marquee scrollamount="20"><h1 
+style="text-align: center; font-size: 60px; color: aliceblue; font-family: 'Press Start 2P', cursive;">Выиграй у них крутые тачки
+</h1></marquee> 
+
+<!--Плеер-->
+<div class="music_play">
+  <a onclick="togglePlay('myAudio')" >
+    <img class="play_button" onclick="play_button.play()" onclick="play_button2.stop()" src="https://cdn3.iconfinder.com/data/icons/iconic-1/32/play_alt-512.png"></a>
+</div>
+
+<!-- Список машин --> <div class="box_list_car"> 
+  <!--Список самих машин -->
+  <a onclick="snd.play()" href="#popup">
+
+  <button class="btn fifth"><img class="car_list" src="aset/css/kartinki/car_1.png"><br>Aston Martin DB9</button>
+  <button class="btn fifth"><img class="car_list" src="aset/css/kartinki/car_2.png"><br>Audi A4 3.2 FSI quattro</button> 
+  <button class="btn fifth"><img class="car_list" src="aset/css/kartinki/car_3.png"><br>Audi TT 3.2 quattro (8N)</button> 
+  <button class="btn fifth"><img class="car_list" src="aset/css/kartinki/car_4.png"><br>Cadillac CTS</button> 
+  <button class="btn fifth"><img class="car_list" src="aset/css/kartinki/car_5.png"><br>Chevrolet Cobalt SS</button> 
+  <button class="btn fifth"><img class="car_list" src="aset/css/kartinki/car_6.png"><br>Chevrolet Corvette (C6)</button> 
+  <button class="btn fifth"><img class="car_list" src="aset/css/kartinki/car_7.png"><br>Dodge Viper SRT-10</button>
+  <button class="btn fifth"><img class="car_list" src="aset/css/kartinki/car_8.png"><br>Ford GT40</li></button> 
+  <button class="btn fifth"><img class="car_list" src="aset/css/kartinki/car_9.png"><br>Fiat Grande Punto</button> 
+  <button class="btn fifth"><img class="car_list" src="aset/css/kartinki/car_10.png"><br>Lamborghini Gallardo</button> 
+  <button class="btn fifth"><img class="car_list" src="aset/css/kartinki/car_11.png"><br>Ford Mustang GT</button> 
+  <button class="btn fifth"><img class="car_list" src="aset/css/kartinki/car_12.png"><br>Koenigsegg CCXR edition</button> 
+  <button class="btn fifth"><img class="car_list" src="aset/css/kartinki/car_13.png"><br>Lamborghini Murciélago</button> 
+  <button class="btn fifth"><img class="car_list" src="aset/css/kartinki/car_14.png"><br>Lexus IS 300</button> 
+  <button class="btn fifth"><img class="car_list" src="aset/css/kartinki/car_15.png"><br>Mazda RX-7 (FD)</button> 
+  <button class="btn fifth"><img class="car_list" src="aset/css/kartinki/car_16.png"><br>Mazda RX-8 (SE3P)</button> 
+  <button class="btn fifth"><img class="car_list" src="aset/css/kartinki/car_17.png"><br>Mercedes-Benz CLK 500</button> 
+  <button class="btn fifth"><img class="car_list" src="aset/css/kartinki/car_18.png"><br>Mercedes-Benz SL 500</button> 
+  <button class="btn fifth"><img class="car_list" src="aset/css/kartinki/car_19.png"><br>Mercedes-Benz SLR McLaren</button> 
+  <button class="btn fifth"><img class="car_list" src="aset/css/kartinki/car_20.png"><br>Mitsubishi Eclipse GT</button> 
+  <button class="btn fifth"><img class="car_list" src="aset/css/kartinki/car_21.png"><br>Mitsubishi Lancer Evolution VIII</button> 
+  <button class="btn fifth"><img class="car_list" src="aset/css/kartinki/car_22.png"><br>Nissan 350Z</button> 
+  <button class="btn fifth"><img class="car_list" src="aset/css/kartinki/car_23.png"><br>Nissan Skyline R34 GT-R</button> 
+  <button class="btn fifth"><img class="car_list" src="aset/css/kartinki/car_24.png"><br>Pontiac GTO</button> 
+  <button class="btn fifth"><img class="car_list" src="aset/css/kartinki/car_25.png"><br>Porsche 911 Carrera S (997)</button> 
+  <button class="btn fifth"><img class="car_list" src="aset/css/kartinki/car_26.png"><br>Porsche 911 GT2 (993)</button> 
+  <button class="btn fifth"><img class="car_list" src="aset/css/kartinki/car_27.png"><br>Porsche Carrera GT</button> 
+  <button class="btn fifth"><img class="car_list" src="aset/css/kartinki/car_28.png"><br>Renault Clio V6</button>
+  <button class="btn fifth"><img class="car_list" src="aset/css/kartinki/car_29.png"><br>Subaru Impreza WRX STI</button> 
+  <button class="btn fifth"><img class="car_list" src="aset/css/kartinki/car_30.png"><br>Toyota Supra</button> 
+  <button class="btn fifth"><img class="car_list" src="aset/css/kartinki/car_31.png"><br>Vauxhall Monaro VXR</button> 
+  <button class="btn fifth"><img class="car_list" src="aset/css/kartinki/car_32.png"><br>фольксваген гольф епта</button> 
+</a>
+</div>
+<!--Инфо_подвал--> <div class="podval">
+<h4 style="padding-top: 60px;">Контактные данные<br>Сапаров Сапар<br> Александр Зубенко<br> Все права защещещещены electronic arts</h4>
+<div>
+  <a href="https://www.instagram.com/sapar.inc.official/"><img style="width: 50px;" src="https://upload.wikimedia.org/wikipedia/commons/5/58/Instagram-Icon.png"></a>
+  <a href="https://vk.com/saparsaparov"><img style="width: 50px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/VK_Compact_Logo_%282021-present%29.svg/2048px-VK_Compact_Logo_%282021-present%29.svg.png"></a>
+  <a href="https://www.facebook.com/"><img style="width: 50px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Facebook_icon.svg/640px-Facebook_icon.svg.png"></a>
+  <a id="tiktok"><img style="width: 50px; cursor: pointer;" src="https://pngfolio.com/images/all_img/copy/1631443365tiktok-icon.png">
+    <script>
+      document.querySelector('#tiktok').onclick = function(){
+        alert("С твоим интелектом все в порядке?")
+      }
+    </script></a>  
+
+</div>
+</div>
+
+
+<!--Вплывающее окно --> 
+<div id = "popup" class = "popup">
+  <a href="#header" class="popup__area"></a>
+  <div class = "popup__body">
+    <div class = "popup__content">
+      <a href = "#header" class = "popup__close">X</a>
+      <div class = "popup__title"> Aston Martin DB9 </div>
+      <div class = "popup__text">ПАШЕЛ ВЕЛ, НИЧЕГО ПОКА НЕТУ. ВЫЙДИ ОТ СЮДА РОЗБИЙНИК 
+        <base href="">
+<div id="carousel">
+  <figure id="spinner"  >
+    <img style="width: 300px;" src="aset/css/kartinki/razor.png" alt>
+    <img style="width: 300px;" src="aset/css/kartinki/logo_mw.png" alt>
+    <img style="width: 300px;" src="aset/css/kartinki/car_1.png" alt>
+    <img style="width: 300px;" src="aset/css/kartinki/car_10.png" alt>
+    <img style="width: 300px;" src="aset/css/kartinki/car_11.png" alt>
+    <img style="width: 300px;" src="aset/css/kartinki/car_13.png" alt>
+    <img style="width: 300px;" src="aset/css/kartinki/car_29.png" alt>
+    <img style="width: 300px;" src="aset/css/kartinki/car_9.png" alt>
+  </figure>
+</div>
+<span style="float:left" class="ss-icon" onclick="galleryspin('-')">&lt;</span>
+<span style="float:right" class="ss-icon" onclick="galleryspin('')">&gt;</span>
+
+                   <!--3dModel--> <iframe style="float: right;" title="Aston Martin DB9 2013.zip" width="500px" height="300px"
+                   frameborder="0" allowfullscreen mozallowfullscreen="true" 
+                   webkitallowfullscreen="true" 
+                   allow="autoplay; fullscreen; xr-spatial-tracking" 
+                   xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/xC6QFOrqdXXSNfNoVnzmnf4nEgD/embed"> 
+                 </iframe> 
+                 <style>
+                  .slider {
+                      -webkit-appearance: none;
+                      width: 100%;
+                      height: 15px;
+                      border-radius: 5px;
+                      background: #d3d3d3;
+                      outline: none;
+                      opacity: 0.7;
+                      -webkit-transition: .2s;
+                      transition: opacity .2s;
+                  }
+                  
+                  .slider:hover {
+                      opacity: 1;
+                  }
+                  
+                  .slider::-webkit-slider-thumb {
+                      -webkit-appearance: none;
+                      appearance: none;
+                      width: 25px;
+                      height: 25px;
+                      border-radius: 50%;
+                      background: #4CAF50;
+                      cursor: pointer;
+                  }
+                  
+                  .slider::-moz-range-thumb {
+                      width: 25px;
+                      height: 25px;
+                      border-radius: 50%;
+                      background: #4CAF50;
+                      cursor: pointer;
+                  }
+                  </style>
+                  </head>
+                  <body>
+                  
+                  <h1>Улучшения автомобиля в процентах</h1>
+                  
+                  <div class="slidecontainer" style="width: 250px;height: 10px; padding-bottom: 50px;">
+                    <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                    <p>Value: <span id="demo"></span></p>
+                  </div>
+                  <div class="slidecontainer" style="width: 250px; height: 10px;">
+                    <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                    <p>Value: <span id="demo"></span></p>
+                  </div>
+                  
+                  <script>
+                  var slider = document.getElementById("myRange");
+                  var output = document.getElementById("demo");
+                  output.innerHTML = slider.value;
+                  
+                  slider.oninput = function() {
+                    output.innerHTML = this.value;
+                  }
+                  </script>
+      <div style="padding-top: 60px;"><h3>Aston Martin DB9 — автомобиль класса Gran Turismo, который производится Aston Martin с 2004 года. 
+        Доступен в двух кузовных вариантах: купе и кабриолет. 
+        Модель была впервые представлена в 2003 году на Франкфуртском автосалоне на замену DB7, 
+        дизайнерами автомобиля были Ян Каллум (англ. Ian Callum) и его преемник Генрик Фискер (англ. Henrik Fisker), 
+        который и закончил разработку. DB9 стал первым автомобилем, предназначенный для сборки на фабрике Aston Martin в Гэйдоне.
+        DB9 в основном состоит из алюминия, как и на DBS шасси — VH platform, двигатель, 
+        тот же что и на Aston Martin V12 Vanquish — 6-литровый V12. Разгоняется до 100 км/ч (62 миль/ч.) за 4.6 с.,
+         максимальная скорость 295 км/ч. (183 миль/ч.)</h3></div>
+         <a href="aset/css/oplata.html" class="floating-button">ДОРАГА: Купить</a>
+    </div>
+  </div>
+</div>
+
+
+
+
+</body>
+</html>

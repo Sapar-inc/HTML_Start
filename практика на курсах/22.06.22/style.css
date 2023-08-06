@@ -1,0 +1,105 @@
+body{
+
+}
+.text1{
+    text-shadow: 18px 20px 0px rgb(189, 189, 189);
+}
+.text2{
+    text-shadow: 18px 20px 3px rgb(189, 189, 189);
+}
+.text3{
+    text-shadow: 
+    18px 20px 3px rgb(255, 86, 86),
+    -5px -10px 3px rgb(82, 111, 255);
+}
+.text4{
+    text-shadow: 1px 1px 1px gray,
+    -1px -1px 1px rgb(0, 0, 0);
+    color: rgba(96, 96, 96, 0.485);
+    
+}
+.text5{
+    text-shadow:
+    1px 1px 1px black,
+    -1px 1px 1px rgb(147, 147, 147);
+    color:rgb(253, 207, 137);
+}
+.text6{
+    text-shadow: 
+    1px 1px 1px black, 
+    -1px -1px 1px black;
+    color: wheat;
+}
+.block1{
+    border: 2px solid;
+    text-align: center;
+    width: 250px;
+    height: 250px;
+    background-color: white;
+    box-shadow: 12px 12px 0 gray;
+    cursor: pointer;
+}
+.block1:active{
+    box-shadow: none;
+    position: relative;
+    left: 12px;
+    top: 12px;
+}
+.block2{
+    border: 2px solid;
+    text-align: center;
+    width: 250px;
+    height: 250px;
+    background-color: white;
+    box-shadow: 12px 12px 10px gray;
+}
+.block3{
+    border: 2px solid;
+    text-align: center;
+    width: 250px;
+    height: 250px;
+    background-color: white;
+    box-shadow: 12px 12px 10px gray, -12px -12px 10px gray;
+}
+.block4{
+    border: 2px solid;
+    text-align: center;
+    width: 250px;
+    height: 250px;
+    background-color: white;
+    box-shadow: 
+    0 20px 20px #575555 inset,
+    20px 20px 20px#575555 inset; 
+}
+.block5{
+    border: 2px solid;
+    text-align: center;
+    width: 250px;
+    height: 250px;
+    background-color: white;
+    box-shadow: 
+    20px 20px 20px #ff0000 inset,
+    20px 20px 20px#ff0000 inset,
+    20px 20px 20px#0000ff inset,
+    -20px -20px 20px#1100ff inset;  
+}
+
+@media (orientation: portrait) 
+{
+    body { 
+            background: red; 
+        }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) 
+{
+    body { 
+            background: green; 
+        }
+}
+@media screen and (min-width: 1024px)
+{
+    body { 
+            background: blue; 
+        }
+}
+

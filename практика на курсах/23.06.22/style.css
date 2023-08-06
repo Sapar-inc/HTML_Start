@@ -1,0 +1,123 @@
+body{
+    background-color: darkcyan;
+}
+.main{
+    background-color: white;
+    width: 750px;
+    height: 300px;
+    border-radius: 30px;
+    box-shadow:  0 20px 40px black;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-auto-rows: 280px;
+    justify-content: center;
+    align-content: center;
+}
+.content{
+    text-align: center;
+}
+.img{
+    width: 50%;
+}
+.two{
+    border-left: 2px solid gray;
+    border-right: 2px solid gray;
+}
+h3{
+    color: rgb(196, 93, 2);
+}
+.button{
+    text-align: center;
+    background-color: rgb(196, 93, 2);
+    border-radius: 5px;
+    width: 100px;
+    height: 40px;
+    cursor: pointer;
+    margin: auto;
+}
+.button > a{
+    display: block;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+
+}
+.block{
+    display: flex;
+    width: 600px;
+    height: 200px;
+    background-color: rgb(220, 254, 0);
+    margin-top: 100px;
+    position: relative;
+    border-radius: 10px;
+    text-align: center;
+    left: -560px;
+    
+}
+.block:hover{
+    left: 0;
+    transition: 2s;
+    animation-play-state: paused;
+}
+.cons{
+    padding: 20px;
+    width: 30%;
+}
+.text{
+    display: flex;
+    width: 550px;
+    background-color: grey;
+}
+.vertical{
+    writing-mode: vertical-lr; 
+}
+
+
+
+nav ul {
+    padding:0;
+    margin:0;
+    list-style: none;
+    position: relative;
+    }
+
+nav ul li {
+    display:inline-block;
+    }
+
+nav a {
+    display:block;
+    padding:0 10px;
+}
+
+nav ul ul {
+	display: none;
+	position: absolute;
+	top: 100%;
+    
+}
+nav ul li:hover > ul {
+	display:block;
+    background-color: white;
+    box-shadow: -1px 5px 5px black;
+}
+nav ul ul li {
+	min-width:170px;
+	float:none;
+	display:list-item;
+	position: relative;
+}
+.file:hover{
+    background-color: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    box-shadow: -1px -1px 5px black;
+}
+.el:hover{
+    background-color: blue;
+    color: white;
+}
+.el{
+    text-decoration: none;
+}

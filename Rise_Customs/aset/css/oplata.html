@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>js вторая работа</title>
+    <style>
+        #div1 {
+            width: 400px;
+            height: 700px;
+            border: 1px solid grey;
+            border-radius: 30px;
+            /*Филе*/
+            padding-left: 20px;
+            padding-right: 20px;
+            
+
+        }
+        #div2 {
+
+            text-align: right;
+        }
+        #div3 {
+            padding-left: 130px;
+            padding-right: 10px;
+        }
+    </style>
+</head>
+
+<body style="padding-left: 35%;">
+    <div id="div1">
+
+        <h1><a style="font-family:  Сонг Ти;">Форма оплаты</a></h1><br>
+                 Обязательные поля: *<input type="hidden"><br />
+        <h2>контакты</h2>
+
+        <div id="div3">
+            <form>
+                <fieldset style="border:1px solid rgb(121, 106, 106)">
+                    <legend>заглавие</legend>
+                    <input type="radio" name="r1" />г-н<br />
+                    <input type="radio" name="r1" />РС<br />
+                </fieldset>
+            </form>
+        </div>
+
+        <div id="div2">
+            <br />
+                         Имя:* <input type="text" style="width:250px;" /><br /><br />
+            E-mail: * <input type="text" style="width:250px;" /><br /><br />
+                         Пароль: * <input type="password" style="width:250px;" /><br /><br />
+        </div>
+        <h2>Платежная информация</h2>
+
+        &emsp;&emsp;&emsp;&emsp;тип карты:<select>
+            <option>Visa</option>
+            <option>ID Card</option>
+            <option>разное</option>
+        </select><br /><br />
+
+        <div id="div2">
+                         номер карты:*  <input type="text" style="width:250px;" /><br /><br />
+                         Дата истечения срока действия карты:* <input type="data" style="width:250px;" /><br />
+        </div>
+        &emsp;&emsp;<em>Формат ввода: месяц / год</em><br /><br />
+        <button>подтвердить платеж</button>
+
+    </div>
+
+</body>
+
+</html>

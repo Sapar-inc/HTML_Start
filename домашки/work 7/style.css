@@ -1,0 +1,32 @@
+td{
+    border: 1px solid;
+    width: 100px;
+    height: 70px;
+    font-weight: bold;
+}
+table{
+    text-align: center;
+    display: inline-block;
+    margin: 5px;
+}
+th{
+    border: 1px solid;
+    width: 100px;
+    height: 45px;
+}
+.table_1{
+    width: 213px;
+}
+div{
+    
+    padding-top: 20px;
+    text-align: center;
+    width: 500px;
+    height: 350px;
+    margin: 0;
+    background-color: darkkhaki;
+    border-radius: 30px;
+    border: 1px solid;
+    margin: auto;
+}
+

@@ -1,0 +1,92 @@
+h1{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    color: coral;
+}
+
+.box {
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+.bounce-7 {
+    animation-name: b3ounce-7;
+    animation-timing-function: cubic-bezier(0.280, 0.840, 0.420, 1);
+}
+@keyframes b3ounce-7 {
+    0%   { transform: scale(1,1)      translateY(0); }
+    10%  { transform: scale(1.1,.9)   translateY(0); }
+    30%  { transform: scale(.9,1.1)   translateY(-30px); }
+    50%  { transform: scale(1.05,.95) translateY(0); }
+    57%  { transform: scale(1,1)      translateY(-7px); }
+    64%  { transform: scale(1,1)      translateY(0); }
+    100% { transform: scale(1,1)      translateY(0); }
+}
+
+
+h3{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 900;
+}
+
+span{
+    font-family: serif;
+    font-weight: 200;
+    text-decoration: underline;
+}
+.lol{
+    margin-left: 13%;
+    margin-right: 13%;
+    border: 10px black solid;
+    border-radius: 30px;
+    padding-left: 5px;
+    background-color: rgba(131, 131, 131, 0.686);
+}
+.ff{
+    position: absolute;
+    left: 40%;
+    cursor: pointer;
+}
+input{
+    background-color: rgba(0, 0, 0, 0.53);
+}
+
+.btn{
+    position: relative;
+    display: block;
+    font-size: 14px;
+    text-decoration: none;
+    margin: 30px 0;
+    border: 2px solid #ff7675;
+    padding: 14px 60px;
+    text-transform: uppercase;
+  }
+  .btn::before{
+    background: #ff7675;
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: -1;
+    transition: all 0.6s ease;
+  }
+  .btn2::before{
+    width: 100%;
+    height: 0%;
+  }
+  .btn2:hover::before{
+    height: 100%;
+  }
+  body{
+      background-image: url(https://thumbs.dreamstime.com/b/space-wallpaper-banner-background-stunning-view-cosmic-galaxy-planets-space-objects-elements-image-space-209227412.jpg);
+  }
+
+  .sqrt{
+      width: 50px;
+      height: 50px;
+      background-color: crimson;
+      transform: rotate(30deg);
+  }
+
+
+

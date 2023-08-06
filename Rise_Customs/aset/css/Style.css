@@ -1,0 +1,411 @@
+body /*Задний фон*/
+{
+  background-image: url(kartinki/background_garage.2.png);
+  background-size: cover;
+}
+
+.carousel-wrapper{ /*Размер слайдера*/
+  height:400px;
+  position:relative;
+  width:800px;
+  margin:0 auto;
+}
+.carousel-item{ 
+  position:absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  opacity:0;
+  transition: all 0.5s ease-in-out;
+}
+.arrow{
+  border: solid rgb(255, 255, 255);
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 12px;
+}
+
+.arrow-prev{
+  left:-30px;
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%) rotate(135deg);
+}
+ 
+.arrow-next{
+    right:-30px;
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%) rotate(-45deg);
+  }
+
+.light{
+  color:white;
+}
+
+@media (max-width: 480px) {
+      .arrow, .light .arrow {
+        background-size: 10px;
+        background-position: 10px 50%;
+      }
+    }
+
+
+/*Контент в слайдере*/
+[id^="item"] {
+    display: none;
+  }
+
+.item-1 {
+    z-index: 2;
+    opacity: 1;
+  background: url(kartinki/1_list.png);
+  background-size:cover;
+}
+.item-2{
+  background:url(kartinki/2_list.png);
+   background-size:cover;
+}
+.item-3{
+  background:url(kartinki/3_list.png);
+   background-size:cover;
+}
+
+*:target ~ .item-1 {
+    opacity: 0;
+  }
+
+#item-1:target ~ .item-1 {
+    opacity: 1;
+  }
+
+#item-2:target ~ .item-2, #item-3:target ~ .item-3 {
+    z-index: 3;
+    opacity: 1;
+  }
+
+.logo_mw /*Логотип*/
+{
+  padding: 40px;
+  text-align: center;
+}
+
+
+.box_list_car
+{
+  margin: 150px;
+  margin-top: 50px;
+  text-align: center;
+  background-color: transparent;
+}
+.car_list
+{
+ -webkit-transform-origin: bottom;
+ transform: scale(0.9);
+ width: 250px;
+ transition: 1s;
+}
+.car_list:hover{
+  transition: 1s;
+  transform: scale(1);
+}
+.btn {
+  
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 1rem;
+}
+.btn:hover, .btn:focus {
+  color: #fff;
+  outline: 0;
+}
+
+.fifth {
+
+  border-color: transparent;
+  color: #a37114;
+}
+.fifth:hover {
+  transition: 850ms;
+  color: #fff;
+}
+
+nav{
+  width: 100%;
+  background: rgb(37, 37, 37); /* Задаем основной фон меню */
+  padding: 0 3%; /* Задаем внутренние отступы */
+  }
+  
+  nav ul {
+  list-style: none; /* Убираем маркер для элементов списка */
+  }
+  
+  nav ul li {
+  display:inline-block;/*Выстраиваем пункты меню в ряд по горизонтали */
+  }
+  
+  nav ul li a {
+  display:block; /* Настраиваем оформление пунктов меню */
+  padding: 15px 20px;
+  font-size: .9em;
+  color: #eee;
+  letter-spacing: 1x;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-top: 1px solid rgb(39, 39, 39);
+  }
+  
+  nav ul li:hover {
+  background: rgb(58, 58, 58); /* Меняем фон пункта меню при наведении указателя мыши */
+  }
+  
+  nav ul li ul {
+  display: none; /* Прячем пункты выпадающего блока меню */
+  position:absolute;
+  background: rgb(53, 53, 53); /* Задаем фон выпадающего блока меню */
+  }
+  
+
+    nav ul li ul li {
+  display:block; /* Выстраиваем по вертикали пункты выпадающего меню */
+  }
+
+.podval{
+ font-size: 25px;
+ text-align: center;
+ width: 1518px;
+ height: 250px;
+ color: #fff;
+ background-color: rgba(77, 77, 77, 0.404);
+}
+
+.button_search
+{
+  border: none;
+  color: #a37114;
+  background-color: rgba(83, 83, 83, 0.493);
+  width: 50px;
+  height: 35px;
+  border-radius: 0 60px 60px 0px;
+  cursor: pointer;
+  
+}
+
+.search{ 
+  border: none;
+  background-color: rgba(83, 83, 83, 0.493);
+  color: #a37114;
+  width: 250px;
+  height: 35px;
+  border-radius: 0px 0 0 0px;
+}
+
+.SS{
+  display: inline-block;
+}
+
+#content #main-content input[type=text i]{
+  padding: none;
+}
+.popup {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(10, 10, 10, 0.644);
+  top: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 3;
+  overflow-y: auto;
+  overflow-x: hidden;
+  transition: all 0.8s ease 0s;
+}
+.popup__area{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.popup:target{
+  opacity: 1;
+  visibility: visible;
+}
+.popup:target .popup__content {
+  transform: perspective(600px) translate(0px, 0%) rotateX(0deg);
+  opacity: 1;
+}
+.popup__body {
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 10px;
+}
+.popup__content /*контент для всплывающего окна*/ { 
+  margin-top: 60px;
+  background-color: rgba(26, 26, 26, 0.945);
+  color: #a37114;
+  max-width: 800px;
+  padding: 30px;
+  position: relative;
+  transition: all 0.8s ease 0s;
+  opacity: 0;
+  transform: perspective(600px) translate(0px, -100%) rotateX(45deg);
+  border-radius: 30px;
+}
+.popup__close {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-size: 20px;
+  color: black;
+  text-decoration: none;
+  color: #a37114;
+}
+.popup__title {
+  font-size: 40px;
+  margin: 0px 0px 1em 0px;
+}
+
+.popup__text {
+
+}
+
+.header{ 
+
+  position: fixed;
+  z-index: 4;
+  width: 1500px;
+}
+
+.player{
+  position: fixed;
+  right: 0px;
+  bottom: 0px;
+  z-index: 3;
+
+}
+
+div#carousel { 
+  perspective: 1200px; 
+
+  padding-top: 10%; 
+  font-size:0; 
+  margin-bottom: 0rem; 
+  overflow: hidden; 
+}
+figure#spinner { 
+  transform-style: preserve-3d; 
+  height: 300px; 
+  transform-origin: 50% 50% -500px; 
+  transition: 1s; 
+} 
+figure#spinner img { 
+  width: 40%; max-width: 425px; 
+  position: absolute; left: 30%;
+  transform-origin: 50% 50% -500px;
+  outline:1px solid transparent; 
+}
+figure#spinner img:nth-child(1) { transform:rotateY(0deg); 
+}
+figure#spinner img:nth-child(2) { transform: rotateY(-45deg); }
+figure#spinner img:nth-child(3) { transform: rotateY(-90deg); }
+figure#spinner img:nth-child(4) { transform: rotateY(-135deg); }
+figure#spinner img:nth-child(5){ transform: rotateY(-180deg); }
+figure#spinner img:nth-child(6){ transform: rotateY(-225deg); }
+figure#spinner img:nth-child(7){ transform: rotateY(-270deg); }
+figure#spinner img:nth-child(8){ transform: rotateY(-315deg); }
+div#carousel ~ span { 
+  color: #fff; 
+  display: inline-block; 
+  text-decoration: none; 
+  font-size: 2rem; 
+  transition: 0.6s color; 
+  position: relative; 
+  margin-top: -17rem; 
+  border-bottom: none; 
+  line-height: 0; }
+div#carousel ~ span:hover { color: #888; cursor: pointer; }
+
+.floating-button {
+  float: right;
+  text-decoration: none;
+  display: inline-block;
+
+  width: 140px; 
+  height: 45px;
+
+  line-height: 45px;
+  border-radius: 45px;
+  margin: 10px 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 11px;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 3px;
+  font-weight: 600;
+  color: #524f4e;
+  background: white;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, .1);
+  transition: .3s;
+}
+.floating-button:hover {
+  background: #a37114;
+  box-shadow: 0 15px 20px #cecb1b(46, 229, 157, .4);
+  color: white;
+  transform: translateY(-7px);
+}
+
+.timer__items {
+  margin-left: 600px;
+  margin-top: 30px;
+  color: rgb(255, 255, 255);
+  display: flex;
+  font-size: 48px;
+}
+.timer__item {
+  position: relative;
+  min-width: 60px;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding-bottom: 15px;
+  text-align: center;
+}
+.timer__item::before {
+  content: attr(data-title);
+  display: block;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  font-size: 14px;
+}
+.timer__item:not(:last-child)::after {
+  content: ':';
+  position: absolute;
+  right: -15px;
+}
+
+.music_play{
+  width: 250px;
+  height: 50px;
+  float: right;
+  background-color: #64450c;
+  border-radius: 30px;
+  position: fixed;
+  right: 0px;
+  bottom: 0px;
+  z-index: 3;
+}
+
+.play_button{
+  width: 30px;
+  float: left;
+  padding-top: 10px;
+  padding-left: 10px;
+  cursor: pointer;
+}
+

@@ -1,0 +1,19 @@
+body{
+    background-image: url(https://img.freepik.com/free-photo/crumpled-paper-texture-background_326533-301.jpg?w=2000);
+}
+h1{
+    font-family: 'AdobeGothicStd-Bold';
+    text-align: center;
+    color: rgb(65, 56, 124);
+}
+h2{
+    font-family: 'AdobeGothicStd-Bold';
+    color: rgb(125, 132, 150);
+}
+@font-face {
+    font-family: "AdobeGothicStd-Bold";
+    src: url(AdobeGothicStd-Bold.otf);
+}
+p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}

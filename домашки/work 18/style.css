@@ -1,0 +1,102 @@
+body{
+    font: 13px "Trebuchet MS", Arial, Helvetica, sans-serif;
+    background: rgb(205, 205, 205);
+    padding: 20px;
+}
+.all{
+    margin: 0 300px 0 300px;
+    display: grid;
+    background-color: white;
+    grid-template-columns: 35% 1fr 25%;
+    grid-auto-rows: auto;
+    gap: 20px;
+    grid-template-areas:
+    "ss ss ss" 
+    "header header header "
+    "img img img"
+    "ads article article"
+    "footer footer footer ";
+    
+}
+header{
+    grid-area: header;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+header ul li a{
+    text-decoration: none;
+}
+
+.li{
+    display: inline-block;
+    padding: 3% 64px; 
+    color: white;
+    cursor: pointer;
+}
+.ul{
+    background-color: rgb(210, 137, 0);
+    padding: 0;
+    margin: 0;
+    margin-bottom: 50px;
+}
+.li:hover{
+    background-color: rgb(186, 0, 0);
+}
+a{
+    color: rgb(255, 181, 43);
+    cursor: pointer;
+}
+a:hover{
+    color: green;
+}
+main{
+    grid-area: article;
+    margin-left: 10px;
+}
+aside{
+    grid-area: ads;
+}
+.block{
+    padding: 1px 10px 10px 10px;
+    margin-left: 10px;
+}
+.ob{
+    
+    color: black;
+    padding: 10px 0 10px 10px;
+}
+footer{
+    padding: 20px;
+    border-top: 5px groove;
+    grid-area: footer;
+    text-align: center;
+}
+.img{
+    width: 100%;
+    grid-area: img;
+}
+img{width: 100%;}
+.block ul li{
+    border-bottom: 1px solid rgb(176, 176, 176);
+    list-style-type: none;
+}
+.block ul{
+    padding: 0;
+}
+.block ul li{
+    padding-bottom: 10px;
+}
+.text{
+    padding-bottom: 20px;
+}
+.li> a{
+    color: white;
+}
+h1{
+    font-size: 35px;
+}
+.ss{
+    grid-area: ss;
+}
+   

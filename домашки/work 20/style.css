@@ -1,0 +1,131 @@
+body{
+    margin: 0; 
+    font-family: Arial;
+    width: 1400px;
+    text-align: center;
+    margin: auto;
+}
+header{
+    background: url(img/first-bg.jpg) no-repeat;
+    width: 1400px;
+    height: 700px;
+    background-size: cover;
+    color: white;
+}
+nav ul{
+    margin: 0 0 0 230px;
+    display: flex;
+    padding: 0;
+}
+nav ul li{
+    margin-top: 50px;
+    list-style: none;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    margin: 0 0 0 40px;
+    font-size: 14px;
+}
+.button{
+    display: block;
+    color: #484543;
+    text-decoration: none;
+    background-color: #fed136;
+    width: 240px;
+    height: 65px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    border-radius: 3px;
+    transition: 0.5s;
+}
+.button:hover{
+    background-color: #af9226;
+    color: #ffffff;
+}
+main{
+    text-align: center;
+}
+.one .info{
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    margin-top: 80px;
+}
+.one .icon-info{
+    width: 290px;
+    margin-bottom: 120px;
+
+}
+.one .icon-info p{
+    font-size: 14px;
+    color: #777777;
+}
+.one .icon-info h3{
+    font-size: 18px;
+}
+.two{
+    padding: 120px 0 132px;
+    background-color: #f7f7f7;
+}
+.two .info{
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    margin-top: 80px;
+}
+.thre .info{
+    margin-top: 80px;
+}
+.thre .icon-info:nth-child(1){
+    margin-left: 17%;
+}
+.thre .icon-info:nth-child(2){
+    margin-left: 44%;
+}
+.thre .icon-info:nth-child(3){
+    margin-left: 17%;
+}
+.thre .icon-info:nth-child(4){
+    margin-left: 44%;
+}
+.thre .icon-info{
+    width: 615px;
+    height: 265px;
+    display: grid;
+    grid-template-rows: 50px 150px;
+    gap: 20px 35px;
+    grid-template-areas: 
+    "img h2"
+    "img p";
+}
+.thre .icon-info:nth-child(1){
+    grid-template-areas: 
+    "h2 img"
+    "p img";  
+}
+.thre .icon-info:nth-child(3){
+    grid-template-areas: 
+    "h2 img"
+    "p img";  
+}
+.thre h2{
+    margin: 0;
+    text-align:start;
+    font-size: 18px;
+}
+.thre .icon-info p{
+    text-align: start;
+    margin: 0;
+    color: #777777;
+    font-weight: 14px;
+    width: 284px;
+}
+footer{
+    margin: 55px 0 120px 0;
+    color: #777777;
+    font-size: 14px;
+}

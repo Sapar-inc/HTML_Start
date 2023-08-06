@@ -1,0 +1,267 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+header{
+    
+    background-blend-mode: multiply;
+    background-color: #293a43;
+    background-image: url(img/0-header.jpg);
+    min-width: 50vw;
+    min-height: 100vh;
+    background-size: 205vh 50vw;
+    background-repeat: no-repeat;
+}
+.content h1{
+    font-family: IntroRegular;
+    font-size: 70px;
+    font-weight: 100;
+    margin-top: 30%;
+}
+.content{
+    display: grid;
+    color: white;
+    justify-content: center;
+}
+.buttons a{
+    display: inline-block;
+    position: relative;
+    color: white;
+    text-decoration: none;
+    width: 150px;
+    height: 35px;
+    font-family: RalewayExtraBold;
+    font-size: 15px;
+    letter-spacing: 0.1px;
+    text-align: center;
+    padding-top: 15px;
+    left: 33%;
+
+}
+.buttons a:nth-child(1){background-color: #f1650e; margin-right: 20px; transition: 0.5s;}
+.buttons a:nth-child(2){background-color: #4c5a65; transition: 0.5s;}
+.buttons a:nth-child(1):hover{background-color: #893a08; margin-right: 20px;}
+.buttons a:nth-child(2):hover{background-color: #2f383e;}
+
+.main{
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(1fr, 500px));
+    grid-auto-rows: 300px;
+    gap: 10px;
+    grid-template-areas: 
+    "one one two thr"
+    "for five five six"
+    "sev eit nine six";
+}
+.main a{
+    background-blend-mode: multiply;
+    background-color: #293a43;
+    text-decoration: none;
+    color: white;
+    font-family: RalewayExtraBold;
+    font-size: 15px;
+    letter-spacing: 0.1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main a:hover{
+    background-color: #1b262d;
+    color: #f1650e;
+}
+
+.main a:nth-child(1){
+    background-image: url(img/1.jpg);
+    grid-area: one;
+    background-size: 100vh 25vw;
+    transition: 0.5s;
+}
+.main a:nth-child(2){
+    background-image: url(img/2.jpg);
+    grid-area: two;
+    background-size: 60vh 20vw;
+    transition: 0.5s;
+}
+.main a:nth-child(3){
+    background-image: url(img/3.jpg);
+    grid-area: thr;
+    background-size: 55vh 20vw;
+    transition: 0.5s;
+}
+.main a:nth-child(4){
+    background-image: url(img/4.jpg);
+    grid-area: for;
+    background-size: 50vh 20vw;
+    transition: 0.5s;
+}
+.main a:nth-child(5){
+    background-image: url(img/5.jpg);
+    grid-area: five;
+    background-size: 95vh 25vw;
+    transition: 0.5s;
+}
+.main a:nth-child(6){
+    background-image: url(img/6.jpg);
+    grid-area: six;
+    background-size: 100vh 40vw;
+    background-position: -130px 10%;
+    transition: 0.5s;
+}
+.main a:nth-child(7){
+    background-image: url(img/7.jpg);
+    grid-area: sev;
+    background-size: 60vh 30vw;
+    transition: 0.5s;
+}
+.main a:nth-child(8){
+    background-image: url(img/8.jpg);
+    grid-area: eit;
+    background-size: 50vh 30vw;
+    transition: 0.5s;
+}
+.main a:nth-child(9){
+    background-image: url(img/9.jpg);
+    grid-area: nine;
+    background-size: 70vh 25vw;
+    transition: 0.5s;
+}
+.buttons2 a{
+    margin: 50px 0 200px 0;
+    display: block;
+    background-color: #f1650e;
+    position: relative;
+    text-decoration: none;
+    width: 250px;
+    height: 40px;
+    font-family: RalewayExtraBold;
+    font-size: 15px;
+    color: white;
+    text-align: center;
+    left: 42%;
+    padding-top: 20px;
+    transition: 0.5s;
+}
+.buttons2 a:hover{
+    background-color: #863909;
+}
+.ready{
+    margin-top: 100px;
+    padding: 50px;
+    background-color: #ededed;
+    display: grid;
+    grid-template-columns: 500px 500px;
+    justify-content: center;
+    height: 500px;
+}
+.img__footer > img{
+    width: 100%;
+}
+.opisan{
+    padding-right: 100px;
+    border-right: 1px solid rgba(128, 128, 128, 0.271);
+    height: 450px;
+}
+.opisan p{
+    font-family: RalewayRegular;
+}
+.form{
+    background-color: #1b262d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    height: 100px;
+}
+.form a{
+    display: block;
+    background-color: #f1650e;
+    position: relative;
+    text-decoration: none;
+    width: 250px;
+    height: 40px;
+    font-family: IntroRegular;
+    font-size: 15px;
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+    transition: 0.5s;
+}
+.form a:hover{
+    background-color: #863909;
+}
+.form input{
+    width: 350px;
+    height: 50px;
+    background-color: #293a43;
+    border: 0;
+    color: white;
+    padding: 0 15px 0 15px;
+}
+.main2{
+    padding: 20px 150px 0 150px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(1fr, 600px));
+    grid-auto-rows: auto;
+    grid-template-areas: 
+    "one two thr thr"
+    "for for five six";
+    gap: 20px;
+}
+.main2 a{
+    background-color: #ededed;
+    text-align: center;
+    cursor:default;
+    padding-bottom: 100px;
+    transition: 0.5s;
+}
+.main2 a:hover img{
+    transform: scale(1.1);
+}
+.main2 a:hover{
+    background-color: #c5c5c5;
+}
+.main2 p{
+    padding: 0 10px;
+    line-height: 30px;
+    font-family: RalewayRegular;
+}
+.main2 h4{
+    font-family: RalewayBold;
+}
+.img_overflow{
+    overflow: hidden;
+    display: inline-block;
+    width: 100%;
+    height: 300px;
+}
+.main2 img{
+ width: 100%;
+ height: 100%;
+ transition: 0.5s;
+}
+.main2 a:nth-child(1){
+    grid-area: one;
+}
+.main2 a:nth-child(2){
+    grid-area: two;
+}
+.main2 a:nth-child(3){
+    grid-area: thr;
+}
+.main2 a:nth-child(4){
+    grid-area: for;
+}
+.main2 a:nth-child(5){
+    grid-area: five;
+}
+.main2 a:nth-child(6){
+    grid-area: six;
+}
+footer{
+    background-color: #17242a;
+    color: white;
+    text-align: center;
+    padding: 100px 0 10px 0;
+    font-family: IntroRegular;
+}

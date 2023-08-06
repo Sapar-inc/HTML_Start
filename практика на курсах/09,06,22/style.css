@@ -1,0 +1,21 @@
+
+ul{
+    list-style: none;
+}
+a{
+    margin: auto;
+    background-color: cornflowerblue;
+    border: 2px blue solid;
+    transition: background-color 1s, color 1s;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    height: 50px;
+    width: 500px;
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    background-color: white;
+    color: rgb(19, 223, 0);
+}

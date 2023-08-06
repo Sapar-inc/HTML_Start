@@ -1,0 +1,89 @@
+body
+{
+  background-image: url(kartinki/background_garage.2.png);
+  background-size: cover;
+  margin: auto;
+}
+
+.garage{
+  width: 500px;
+  height: 300px;
+  padding-left: 30%;
+}
+
+nav{
+  width: 100%;
+  background: rgb(37, 37, 37); /* Задаем основной фон меню */
+  padding: 0 3%; /* Задаем внутренние отступы */
+  }
+  
+  nav ul {
+  list-style: none; /* Убираем маркер для элементов списка */
+  }
+  
+  nav ul li {
+  display:inline-block;/*Выстраиваем пункты меню в ряд по горизонтали */
+  }
+  
+  nav ul li a {
+  display:block; /* Настраиваем оформление пунктов меню */
+  padding: 15px 20px;
+  font-size: .9em;
+  color: #eee;
+  letter-spacing: 1x;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-top: 1px solid rgb(39, 39, 39);
+  }
+  
+  nav ul li:hover {
+  background: rgb(58, 58, 58); /* Меняем фон пункта меню при наведении указателя мыши */
+  }
+  
+  nav ul li ul {
+  display: none; /* Прячем пункты выпадающего блока меню */
+  position:absolute;
+  background: rgb(53, 53, 53); /* Задаем фон выпадающего блока меню */
+  }
+  
+
+    nav ul li ul li {
+  display:block; /* Выстраиваем по вертикали пункты выпадающего меню */
+  }
+
+.podval{
+ font-size: 25px;
+ text-align: center;
+ width: 1518px;
+ height: 250px;
+ color: #fff;
+ background-color: rgba(77, 77, 77, 0.404);
+}
+
+.button_search
+{
+  border: none;
+  color: #a37114;
+  background-color: rgba(83, 83, 83, 0.493);
+  width: 50px;
+  height: 35px;
+  border-radius: 0 60px 60px 0px;
+  cursor: pointer;
+  
+}
+
+.search{ 
+  border: none;
+  background-color: rgba(83, 83, 83, 0.493);
+  color: #a37114;
+  width: 250px;
+  height: 35px;
+  border-radius: 0px 0 0 0px;
+}
+
+.header{ 
+
+  position: fixed;
+  z-index: 4;
+  width: 1500px;
+}
